@@ -1,0 +1,32 @@
+{
+  "name": "kunalagra",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "cors": "^2.8.5",
+    "dateformat": "^5.0.3",
+    "eslint-config-next": "14.1.0",
+    "framer-motion": "^11.0.6",
+    "next": "14.1.0",
+    "next-google-fonts": "^2.2.0",
+    "next-sitemap": "^4.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.8.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

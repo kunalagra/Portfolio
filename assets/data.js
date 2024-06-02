@@ -56,7 +56,7 @@ export const links = [
 export const milestones = [
   {
     id: 1,
-    date: 'Dec 2023 - Mar 2024',
+    date: 'Jan 2024 - Apr 2024',
     title: 'Freelancer',
     description:
       'Developed and deployed an E-Commerce Website. Additonally developed automation for Social media postings, improved page speed & optimised SEO.',
@@ -148,6 +148,13 @@ export const certificatesData = [
     organization: 'Nvidia',
     issueDate: '2022-07-09',
     link: 'https://courses.nvidia.com/certificates/09088dd062a54ff18d01fe011eb7530c/',
+  },
+    {
+    id: 20,
+    title: 'SQL',
+    organization: 'Mimo',
+    issueDate: '2024-03-06',
+    link: 'https://drive.google.com/file/d/1y4ysHxLyOAxBMPM42IqJTdeBapXWhpYc/view?usp=sharing',
   },
 ]
 

@@ -149,12 +149,19 @@ export const certificatesData = [
     issueDate: '2022-07-09',
     link: 'https://courses.nvidia.com/certificates/09088dd062a54ff18d01fe011eb7530c/',
   },
-    {
+  {
     id: 20,
     title: 'SQL',
     organization: 'Mimo',
     issueDate: '2024-03-06',
-    link: 'https://drive.google.com/file/d/1y4ysHxLyOAxBMPM42IqJTdeBapXWhpYc/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1y4ysHxLyOAxBMPM42IqJTdeBapXWhpYc/view',
+  },
+  {
+    id: 21,
+    title: 'Chainlink Bootcamp 2024',
+    organization: 'Chainlink',
+    issueDate: '2024-02-23',
+    link: 'https://collectors.poap.xyz/token/7013080',
   },
 ]
 

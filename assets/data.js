@@ -171,7 +171,7 @@ export const projectsData = [
       'https://raw.githubusercontent.com/kunalagra/sikho/main/public/assets/screenshot.png',
     description:
       'Sikho is a Personalized Pofessional Skill Development Platform that allows students to enroll for live instructor led classes allowing for more personalized learning. It also allows peer-led courses.',
-    githubLink: 'https://github.com/kunalagra/Sikho',
+    githubLink: 'https://github.com/kunalagra/sikho',
     deployLink: 'https://sikhoapp.vercel.app/',
     tags: ['Next.js', 'MongoDB', 'Jitsi'],
     date: '2024-03-25',
@@ -183,7 +183,7 @@ export const projectsData = [
       'https://raw.githubusercontent.com/kunalagra/codegamy/main/public/screenshot.png',
     description:
       'A coding and interview platform with CodeChef style Solutions. Major feature includes Peer-review based Interviews to help learners practice.',
-    githubLink: 'https://github.com/kunalagra/Codegany',
+    githubLink: 'https://github.com/kunalagra/codegamy',
     deployLink: 'https://codegamy.vercel.app/',
     tags: ['Next.js', 'MongoDB', 'Jitsi'],
     date: '2024-03-15',

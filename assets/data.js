@@ -36,7 +36,7 @@ export const links = [
   },
   {
     name: 'Resume',
-    url: 'https://drive.google.com/file/d/1xSuVUMK4WzzzA088TGtvc_zGQbBhhwHe/view',
+    url: '/cv',
   },
   {
     name: 'LeetCode',

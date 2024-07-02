@@ -47,27 +47,45 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider resetCSS theme={customTheme}>
       <GlobalStyle>
         <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-          rel="stylesheet preload prefetch"
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
-        <link
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
-          rel="stylesheet preload prefetch"
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
-        <meta name="theme-color" content="black" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="title" content="Kunal Agrawal - Software Engineer" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+          <link
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+            rel="stylesheet preload prefetch"
+            onLoad="this.onload=null;this.rel='stylesheet'"
+          />
+          <link
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+            rel="stylesheet preload prefetch"
+            onLoad="this.onload=null;this.rel='stylesheet'"
+          />
+          <meta name="theme-color" content="black" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <meta name="title" content="Kunal Agrawal - Software Engineer" />
           <meta
             name="description"
             content="Software Engineer based in India, an undergraduate student at University of Mumbai."
@@ -82,7 +100,6 @@ function MyApp({ Component, pageProps }) {
             property="og:description"
             content="Software Engineer based in India, an undergraduate student at University of Mumbai."
           />
-
         </Head>
         <Component {...pageProps} />
       </GlobalStyle>

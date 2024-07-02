@@ -52,7 +52,7 @@ export default function Navbar({ enableTransition }) {
                 </Button>
               </NextLink>
               <Link href="https://nyxcoder.hashnode.dev/" isExternal>
-              <Button variant="ghost" fontSize="16px">
+                <Button variant="ghost" fontSize="16px">
                   Blogs
                 </Button>
               </Link>
@@ -118,7 +118,7 @@ export default function Navbar({ enableTransition }) {
                 <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px">
                   Blogs
                 </Button>
-                </Link>
+              </Link>
               <NextLink href="/links" passHref>
                 <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px">
                   Links
@@ -128,8 +128,7 @@ export default function Navbar({ enableTransition }) {
                 <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px">
                   Projects
                 </Button>
-              </NextLink>
-              {' '}
+              </NextLink>{' '}
             </Box>
           ) : (
             <Icon as={AiOutlineMenu} w={7} h={7} onClick={onOpen} />

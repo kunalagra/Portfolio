@@ -2,8 +2,7 @@ export const bioData = {
   name: 'Kunal Agrawal',
   description:
     'I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.',
-  resume:
-    '/CV',
+  resume: '/CV',
   linkedin: 'https://www.linkedin.com/in/kunalragrawal/',
   github: 'https://github.com/kunalagra/',
   mailto: 'mailto:kunalagrawal@tutanota.com',
@@ -168,7 +167,8 @@ export const certificatesData = [
 export const projectsData = [
   {
     title: 'Sikho - Upskill yourself',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/sikho/main/public/assets/screenshot.png',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/sikho/main/public/assets/screenshot.png',
     description:
       'Sikho is a Personalized Pofessional Skill Development Platform that allows students to enroll for live instructor led classes allowing for more personalized learning. It also allows peer-led courses.',
     githubLink: 'https://github.com/kunalagra/Sikho',
@@ -179,7 +179,8 @@ export const projectsData = [
   },
   {
     title: 'Codegamy - Coding & Interview Platform',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/codegamy/main/public/screenshot.png',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/codegamy/main/public/screenshot.png',
     description:
       'A coding and interview platform with CodeChef style Solutions. Major feature includes Peer-review based Interviews to help learners practice.',
     githubLink: 'https://github.com/kunalagra/Codegany',
@@ -190,7 +191,8 @@ export const projectsData = [
   },
   {
     title: 'MediCall - AIO Hospital App',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/MediCall/main/medicall/public/screenshot.png',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/MediCall/main/medicall/public/screenshot.png',
     description:
       '  MediCall bridges the gap by allowing patients to connect to doctors remotly, schedule appointments with suitable doctors, get prescription, support for email and more.',
     githubLink: 'https://github.com/kunalagra/MediCall',
@@ -201,7 +203,8 @@ export const projectsData = [
   },
   {
     title: 'SumUp - Summarize TEAMs Meetings',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/SumUp/main/stm-app/public/screenshot.png',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/SumUp/main/stm-app/public/screenshot.png',
     description:
       'This project  provides comprehensive solution for summarizing and managing meetings by extracting key insights. Also Developed a companion Chrome Extension for Google Meet which provides Live transcript and cloud storage facility',
     githubLink: 'https://github.com/kunalagra/sumup',
@@ -212,7 +215,8 @@ export const projectsData = [
   },
   {
     title: 'InterCollege Placement Web App',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/InterCollege-Placement-WebApp/master/static/img/screenshot.png',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/InterCollege-Placement-WebApp/master/static/img/screenshot.png',
     description:
       'By centralizing information of placement data of each college, the project aims to provide the stakeholders with valuable insights',
     githubLink: 'https://github.com/kunalagra/InterCollege-Placement-WebApp',
@@ -233,7 +237,8 @@ export const projectsData = [
   },
   {
     title: 'Personal Health Insurance Premium',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/personalInsurance/main/static/img/screenshot.png',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/personalInsurance/main/static/img/screenshot.png',
     description:
       'A Web Application to predict the Personalized Health Insurance Premium based on user input.',
     githubLink: 'https://github.com/kunalagra/personalInsurance',
@@ -322,7 +327,8 @@ export const projectsData = [
   },
   {
     title: 'Sleep Monitor Using Laptop Camera',
-    imageUrl: 'https://raw.githubusercontent.com/kunalagra/codeshastra8/main/static/img/screenshot.jpeg',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/codeshastra8/main/static/img/screenshot.jpeg',
     description:
       "The app aims to help users find patterns in their sleeps just by using their Laptop's Web Camera. Uses OpenCV based Model for face detection",
     githubLink: 'https://github.com/kunalagra/codeshastra8',

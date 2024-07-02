@@ -13,7 +13,7 @@ import {
   Spacer,
 } from '@chakra-ui/react'
 
-import { FaArrowUpRightFromSquare  } from 'react-icons/fa6'
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 
 const Milestones = ({ milestones }) => {
   const isMobile = useBreakpointValue({ base: true, md: false })
@@ -114,7 +114,7 @@ const Card = ({ id, title, description, date, url }) => {
                   }}
                   isExternal
                 >
-                  <FaArrowUpRightFromSquare 
+                  <FaArrowUpRightFromSquare
                     justifycontent="flex-end"
                     aria-label="link"
                     size={20}

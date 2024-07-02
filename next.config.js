@@ -3,19 +3,19 @@ module.exports = {
     return [
       {
         source: '/cv',
-        destination: 'https://drive.google.com/file/d/1xSuVUMK4WzzzA088TGtvc_zGQbBhhwHe/view',
+        destination:
+          'https://drive.google.com/file/d/1xSuVUMK4WzzzA088TGtvc_zGQbBhhwHe/view',
         permanent: true,
       },
       {
         source: '/CV',
-        destination: 'https://drive.google.com/file/d/1xSuVUMK4WzzzA088TGtvc_zGQbBhhwHe/view',
+        destination:
+          'https://drive.google.com/file/d/1xSuVUMK4WzzzA088TGtvc_zGQbBhhwHe/view',
         permanent: true,
       },
     ]
   },
   images: {
-    domains: [
-      'raw.githubusercontent.com',
-    ],
+    domains: ['raw.githubusercontent.com'],
   },
 }

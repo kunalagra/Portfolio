@@ -18,7 +18,7 @@ import {
   FaJs,
   FaCode,
   FaGithub,
-  FaArrowUpRightFromSquare ,
+  FaArrowUpRightFromSquare,
   FaBootstrap,
   FaDatabase,
 } from 'react-icons/fa6'
@@ -195,7 +195,10 @@ export default function Cards({
                 )}
                 {deployLink && (
                   <Link href={deployLink} color="white" isExternal>
-                    <FaArrowUpRightFromSquare  aria-label="project link" size={20} />
+                    <FaArrowUpRightFromSquare
+                      aria-label="project link"
+                      size={20}
+                    />
                   </Link>
                 )}
               </Stack>

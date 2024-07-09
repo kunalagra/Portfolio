@@ -166,6 +166,17 @@ export const certificatesData = [
 
 export const projectsData = [
   {
+    title: 'UniMoney - Manage Your Money',
+    imageUrl:
+      'https://raw.githubusercontent.com/kunalagra/UniMoney/main/assets/images/screenshot.png',
+    description:
+      'UniMoney is a personal finance management app that automaticallys extracts relevant data from transaction SMS to auto populate your online transactions, easing your life from manually tracking all the expenses.',
+    githubLink: 'https://github.com/kunalagra/UniMoney',
+    tags: ['React Native','Node.js', 'MongoDB'],
+    date: '2024-06-01',
+    type: ['App'],
+  },
+  {
     title: 'Sikho - Upskill yourself',
     imageUrl:
       'https://raw.githubusercontent.com/kunalagra/sikho/main/public/assets/screenshot.png',

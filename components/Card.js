@@ -42,7 +42,8 @@ import {
   SiTensorflow,
 } from 'react-icons/si'
 import { GiArtificialIntelligence } from 'react-icons/gi'
-import { FaChartLine, FaMagnifyingGlassChart } from 'react-icons/fa6'
+import { FaChartLine, FaMagnifyingGlassChart, FaNodeJs  } from 'react-icons/fa6'
+
 // import useMediaQuery from '../hook/useMediaQuery'
 
 // import Image from './ChakraNextImage'
@@ -81,6 +82,12 @@ export default function Cards({
     } else if (tag == 'MongoDB') {
       values[0] = 'green'
       values[1] = SiMongodb
+    } else if (tag == 'Node.js') {
+      values[0] = 'teal'
+      values[1] = FaNodeJs
+    } else if (tag == 'React Mative') {
+      values[0] = 'blue'
+      values[1] = SiReact 
     } else if (tag == 'Django') {
       values[0] = 'red'
       values[1] = SiDjango

@@ -21,6 +21,9 @@ import {
   FaArrowUpRightFromSquare,
   FaBootstrap,
   FaDatabase,
+  FaChartLine, 
+  FaMagnifyingGlassChart, 
+  FaNodeJs
 } from 'react-icons/fa6'
 import {
   SiNextdotjs,
@@ -42,7 +45,6 @@ import {
   SiTensorflow,
 } from 'react-icons/si'
 import { GiArtificialIntelligence } from 'react-icons/gi'
-import { FaChartLine, FaMagnifyingGlassChart, FaNodeJs  } from 'react-icons/fa6'
 
 // import useMediaQuery from '../hook/useMediaQuery'
 
@@ -87,7 +89,7 @@ export default function Cards({
       values[1] = FaNodeJs
     } else if (tag == 'React Native') {
       values[0] = 'blue'
-      values[1] = SiReact 
+      values[1] = FaReact 
     } else if (tag == 'Django') {
       values[0] = 'red'
       values[1] = SiDjango

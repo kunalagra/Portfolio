@@ -85,7 +85,7 @@ export default function Cards({
     } else if (tag == 'Node.js') {
       values[0] = 'teal'
       values[1] = FaNodeJs
-    } else if (tag == 'React Mative') {
+    } else if (tag == 'React Native') {
       values[0] = 'blue'
       values[1] = SiReact 
     } else if (tag == 'Django') {

@@ -55,6 +55,14 @@ export const links = [
 export const milestones = [
   {
     id: 1,
+    date: 'Aug 2024 - Current',
+    title: 'Testlify - Backend Developer',
+    description:
+      'Analyzed and resolved critical bottlenecks across the application, enhancing API response times by up to 70% for key controllers. Designed and implemented various end-to-end features, including Traffit integration and support for multi-file coding questions.',
+    url: 'https://testlify.com/',
+  },
+  {
+    id: 2,
     date: 'Jan 2024 - Apr 2024',
     title: 'Freelancer',
     description:
@@ -62,22 +70,22 @@ export const milestones = [
     url: 'https://kumail.shop/',
   },
   {
-    id: 2,
+    id: 3,
     date: 'Oct 2023 - Jan 2023',
     title: 'Prodigy InfoTech',
     description:
       'Worked on building various client facing features for the new application. Additionally, built automation tools for HR team using Google App Scripts to ease the workflow.',
-    url: 'https://kumail.shop/',
+    url: 'https://prodigyinfotech.dev/',
   },
   {
-    id: 3,
+    id: 4,
     date: 'Jul 2022 - Jun 2023',
     title: 'Founder & President',
     description:
       'Kick-started Mind Benders Club - TCET to oversee the development of students in upcoming technologies (AI/DS/ML).\nLed a team of 12 to conduct 8 workshops with over 1K+ participants and 1 Hackathon with 25+ teams.\nSupervised day-to-day activities, oversee the development of Website & Blog with CI/CD pipelines.',
   },
   {
-    id: 4,
+    id: 5,
     date: 'Aug 2022 - Sep 2022',
     title: `Social Summer of Code'22`,
     description: `Ranked 16 out of 500+ particiapnts.\nDeveloped various Deep Learning Models with Visualization. Noticable models developed includes Sea Animal Detection & Grapevine Leaves Classification.\n Additonally, Reworked the Manifest for PortoflioShop, and optimized it for best practices for wide comptability across platforms`,

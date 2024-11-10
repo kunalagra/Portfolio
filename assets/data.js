@@ -97,14 +97,14 @@ export const certificatesData = [
     title: 'Duke - Introduction to Machine Learning',
     organization: 'Coursera',
     issueDate: '2021-06-14',
-    link: 'https://google.com',
+    link: 'https://coursera.org/share/91038c617999f42f292e51cb9ca28221',
   },
   {
     id: 13,
     title: 'Spoken Tutorials - C++',
     organization: 'IIT Bombay',
     issueDate: '2021-05-24',
-    link: 'https://drive.google.com/file/d/1Oaf6gFga_AUU0Hix6qJHQsRd7Hopzjin/view',
+    link: 'https://drive.google.com/file/d/10mALMGuQrSt5Pmxue66Xjh8aFSsbpBtX/view',
   },
   {
     id: 14,

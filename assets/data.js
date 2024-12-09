@@ -174,6 +174,17 @@ export const certificatesData = [
 
 export const projectsData = [
   {
+    title: 'TradeView - Quick Market View',
+    imageUrl:
+      'https://github.com/kunalagra/tradeview-fe/raw/main/screenshot.png',
+    description:
+      'A full-stack Dashboard for a traders featuring components from ShadCN UI. Uses Typescript for BE & FE and implements Websocket too',
+    githubLink: 'https://github.com/kunalagra/tradeview-fe/',
+    tags: ['Next.js','Fastify','SQLite'],
+    date: '2024-12-10',
+    type: ['Web'],
+  },
+  {
     title: 'UniMoney - Manage Your Money',
     imageUrl:
       'https://raw.githubusercontent.com/kunalagra/UniMoney/main/assets/images/screenshot.png',

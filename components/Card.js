@@ -43,6 +43,8 @@ import {
   SiMarkdown,
   SiJitsi,
   SiTensorflow,
+  SiFastify,
+  SiSqlite 
 } from 'react-icons/si'
 import { GiArtificialIntelligence } from 'react-icons/gi'
 
@@ -114,9 +116,6 @@ export default function Cards({
     } else if (tag == 'Hugo') {
       values[0] = 'purple'
       values[1] = SiHugo
-    } else if (tag == 'SQL') {
-      values[0] = 'blue'
-      values[1] = FaDatabase
     } else if (tag == 'Jitsi') {
       values[0] = 'blue'
       values[1] = SiJitsi
@@ -135,6 +134,12 @@ export default function Cards({
     } else if (tag == 'SQL') {
       values[0] = 'blue'
       values[1] = FaDatabase
+    } else if (tag == 'SQLite') {
+      values[0] = 'blue'
+      values[1] = SiSqlite
+    } else if (tag == 'Fastify') {
+      values[0] = 'gray'
+      values[1] = SiFastify 
     } else if (tag == 'Next.js') {
       values[0] = 'gray'
       values[1] = SiNextdotjs

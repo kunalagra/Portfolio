@@ -8,16 +8,16 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 ## 🛠 Get started
 
 ### Starting the Project
-Install the dependencies with `npm i`   
-Start the project by `npm run dev` 
+Install the dependencies with `npm i`
+Start the project by `npm run dev`
   
 ### Deployment
-You can deploy easily by using [Vercel](https://vercel.com/) 🎉  
+You can deploy easily by using [Vercel](https://vercel.com/) 🎉
   
 ## 📌 Overview
-`pages/index.js` = Homepage  
-`pages/projects/index.js` = Projects archive page  
-`pages/links/index.js` = Links page  
+`src/app/page.tsx` = Homepage
+`src/app/projects/page.tsx` = Projects archive page
+`src/app//links/page.tsx` = Links page
 
 ## ⚙ Tech Stack
 - Next.js

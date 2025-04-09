@@ -16,7 +16,9 @@ You can deploy easily by using [Vercel](https://vercel.com/) 🎉
   
 ## 📌 Overview
 `src/app/page.tsx` = Homepage
+
 `src/app/projects/page.tsx` = Projects archive page
+
 `src/app//links/page.tsx` = Links page
 
 ## ⚙ Tech Stack

@@ -180,7 +180,7 @@ export const projectsData = [
     description:
       'A full-stack Dashboard for a traders featuring components from ShadCN UI. Uses Typescript for BE & FE and implements Websocket too',
     githubLink: 'https://github.com/kunalagra/tradeview-fe/',
-    tags: ['Next.js','Fastify','SQLite'],
+    tags: ['Next.js', 'Fastify', 'SQLite'],
     date: '2024-12-10',
     type: ['Web'],
   },
@@ -191,7 +191,7 @@ export const projectsData = [
     description:
       'UniMoney is a personal finance management app that automaticallys extracts relevant data from transaction SMS to auto populate your online transactions, easing your life from manually tracking all the expenses.',
     githubLink: 'https://github.com/kunalagra/UniMoney',
-    tags: ['React Native','Node.js', 'MongoDB'],
+    tags: ['React Native', 'Node.js', 'MongoDB'],
     date: '2024-06-01',
     type: ['App'],
   },

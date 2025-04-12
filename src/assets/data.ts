@@ -1,4 +1,6 @@
-export const bioData = {
+import type { Bio, Project, Certificate, Milestone, LinkInfo } from '@/types'
+
+export const bioData: Bio = {
   name: 'Kunal Agrawal',
   description:
     'I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.',
@@ -8,7 +10,7 @@ export const bioData = {
   mailto: 'mailto:kunalagrawal@tutanota.com',
 }
 
-export const links = [
+export const links: LinkInfo[] = [
   {
     name: 'Phone',
     url: 'tel:+919867174368',
@@ -52,7 +54,7 @@ export const links = [
   },
 ]
 
-export const milestones = [
+export const milestones: Milestone[] = [
   {
     id: 1,
     date: 'Aug 2024 - Current',
@@ -92,7 +94,7 @@ export const milestones = [
     url: 'https://devfolio.co/projects/open-sauce-fun-3517',
   },
 ]
-export const certificatesData = [
+export const certificates: Certificate[] = [
   {
     id: 11,
     title: 'Stanford - Machine Learning',
@@ -172,7 +174,7 @@ export const certificatesData = [
   },
 ]
 
-export const projectsData = [
+export const projects: Project[] = [
   {
     title: 'TradeView - Quick Market View',
     imageUrl:

@@ -14,9 +14,9 @@ import {
   Heading,
 } from '@chakra-ui/react'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
-import { MilestoneData, MilestonesProps } from '@/types'
+import { Milestone, MilestonesProps } from '@/types'
 
-const Card = ({ id, title, description, date, url }: MilestoneData) => {
+const Card = ({ id, title, description, date, url }: Milestone) => {
   const isEvenId = id % 2 === 0
 
   const cardPointerStyles = {

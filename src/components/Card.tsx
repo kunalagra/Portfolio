@@ -51,12 +51,12 @@ import { GiArtificialIntelligence } from 'react-icons/gi'
 import { CardProps } from '@/types'
 
 export function Cards({
-  imageURL,
+  imageUrl,
   title,
-  desc,
+  description,
   githubLink,
   deployLink,
-  tag,
+  tags,
 }: CardProps) {
   const getTag = (tag: string): [string, React.ElementType] => {
     let values: [string, React.ElementType] = ['gray', FaCode]
@@ -153,7 +153,7 @@ export function Cards({
     return values
   }
 
-  const Tags = tag.map((item) => {
+  const Tags = tags.map((item) => {
     const [color, IconComponent] = getTag(item)
     return (
       <Tag.Root
@@ -181,7 +181,7 @@ export function Cards({
     >
       <Image
         w="100%"
-        src={imageURL}
+        src={imageUrl}
         transition="0.3s"
         alt={title || 'project image'}
         display="inline-block"
@@ -226,7 +226,7 @@ export function Cards({
         <Wrap>{Tags}</Wrap>
         <Separator />
         <Text color="textSecondary" fontSize={{ base: 'sm', md: 'md' }}>
-          {desc}
+          {description}
         </Text>
       </Stack>
     </LinkBox>

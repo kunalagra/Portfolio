@@ -3,9 +3,9 @@
 import { useState } from 'react'
 import { Cards } from '@/components'
 import { Box, Tabs, Stack, Heading, Text, SimpleGrid } from '@chakra-ui/react'
-import { ProjectData, ProjectsClientUIProps } from '@/types'
+import { ProjectsClientUIProps } from '@/types'
 
-const ProjectCardsGrid = ({ projects }: { projects: ProjectData[] }) => {
+const ProjectCardsGrid = ({ projects }: ProjectsClientUIProps) => {
   if (!projects || projects.length === 0) {
     return (
       <Text textAlign="center" color="fg.muted" mt={4}>
@@ -18,12 +18,12 @@ const ProjectCardsGrid = ({ projects }: { projects: ProjectData[] }) => {
       {projects.map((project) => (
         <Cards
           key={project.id || project.title}
-          imageURL={project.imageUrl}
+          imageUrl={project.imageUrl}
           title={project.title}
-          desc={project.description}
+          description={project.description}
           githubLink={project.githubLink}
           deployLink={project.deployLink}
-          tag={project.tags}
+          tags={project.tags}
         />
       ))}
     </SimpleGrid>

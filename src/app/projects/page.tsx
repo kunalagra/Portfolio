@@ -1,11 +1,11 @@
 import React from 'react'
-import { projectsData } from '@/assets/data'
+import { projects as data } from '@/assets/data'
 import { ProjectsClientUI } from '@/components'
-import { ProjectData } from '@/types'
+import { Project } from '@/types'
 import { Metadata } from 'next'
 
-async function getSortedProjects(): Promise<ProjectData[]> {
-  const projects: ProjectData[] = projectsData
+async function getSortedProjects(): Promise<Project[]> {
+  const projects: Project[] = data
   return projects.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   )
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'My Projects',
   openGraph: {
     title: 'Projects | Kunal Agrawal',
-    description: 'My Projects',  
+    description: 'My Projects',
   },
 }
 

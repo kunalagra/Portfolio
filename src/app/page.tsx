@@ -1,10 +1,5 @@
 import { Stack } from '@chakra-ui/react'
-import {
-  projectsData,
-  bioData,
-  certificatesData,
-  milestones,
-} from '@/assets/data.js'
+import { projects, bioData, certificates, milestones } from '@/assets/data'
 import {
   AboutMe,
   Milestones,
@@ -27,8 +22,8 @@ export default async function Page() {
       <Introduction introduction={bioData} />
       <AboutMe />
       <Milestones milestones={milestones} />
-      <FeaturedProjects projects={projectsData} />
-      <Certificates certificates={certificatesData} />
+      <FeaturedProjects projects={projects} />
+      <Certificates certificates={certificates} />
       <ContactMe introduction={bioData} />
     </Stack>
   )

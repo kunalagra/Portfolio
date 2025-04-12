@@ -2,25 +2,20 @@ import {
   defineConfig,
   createSystem,
   defaultConfig,
-  defineRecipe,
   defineSemanticTokens,
   defineTokens,
 } from '@chakra-ui/react'
 
-// --- Fluid Typography Function (remains the same) ---
-const fluidType = (minFont, maxFont) => {
-  let XX = 768 / 100
-  let YY = (100 * (maxFont - minFont)) / (1920 - 768)
-  let ZZ = minFont / 16
+const fluidType = (minFont: number, maxFont: number): string => {
+  // Added type annotations: numbers in, string out
+  const XX = 768 / 100
+  const YY = (100 * (maxFont - minFont)) / (1920 - 768)
+  const ZZ = minFont / 16
   return `calc(${ZZ}rem + ((1vw - ${XX}px) * ${YY}))`
 }
 
-// --- Define Link Recipe (v3 equivalent of component style) ---
-
-// --- Define Tokens (using defineTokens helper) ---
 const tokens = defineTokens({
   colors: {
-    // Wrap all color values in { value: ... }
     background: { value: '#12141D' },
     secondary: { value: '#080808' },
     complement: { value: '#FA934F' },
@@ -105,27 +100,20 @@ const config = defineConfig({
   cssVarsRoot: ':where(:root, :host)',
   cssVarsPrefix: 'ck', // Or your preferred prefix
   theme: {
-    // Breakpoints go directly under theme
     breakpoints: {
-      // Use string values directly
       base: '0em',
       sm: '30em',
       md: '48em',
       lg: '80em',
-      xl: '80em', // Still duplicated, confirm if needed
+      xl: '80em',
+      '2xl': '96em',
     },
-    // Assign defined tokens
     tokens: tokens,
-    semanticTokens: semanticTokens, // Add the new semantic tokens
-
-    // Assign defined recipes
-
-    // You can add/override other categories like semanticTokens, layerStyles etc. here
+    semanticTokens: semanticTokens,
   },
   // Add other config options if needed (e.g., strictTokens: true)
 })
 
-// --- Create the System ---
 const customTheme = createSystem(defaultConfig, config)
 
 export default customTheme

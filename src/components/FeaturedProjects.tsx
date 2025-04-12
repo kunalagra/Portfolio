@@ -11,9 +11,9 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { Cards } from '@/components'
-import { ProjectData } from '@/types'
+import { ProjectsClientUIProps } from '@/types'
 
-export function FeaturedProjects({ projects }: { projects: ProjectData[] }) {
+export function FeaturedProjects({ projects }: ProjectsClientUIProps) {
   if (!projects || projects.length < 3) {
     console.error(
       "FeaturedProjects requires at least 3 projects in the 'projects' array.",
@@ -64,30 +64,30 @@ export function FeaturedProjects({ projects }: { projects: ProjectData[] }) {
             </Link>
           </Stack>
           <Cards
-            imageURL={projects[0].imageUrl}
+            imageUrl={projects[0].imageUrl}
             title={projects[0].title}
-            desc={projects[0].description}
+            description={projects[0].description}
             githubLink={projects[0].githubLink}
             deployLink={projects[0].deployLink}
-            tag={projects[0].tags}
+            tags={projects[0].tags}
           />
           <Box mt={{ md: '-50%' }}>
             <Cards
-              imageURL={projects[1].imageUrl}
+              imageUrl={projects[1].imageUrl}
               title={projects[1].title}
-              desc={projects[1].description}
+              description={projects[1].description}
               githubLink={projects[1].githubLink}
               deployLink={projects[1].deployLink}
-              tag={projects[1].tags}
+              tags={projects[1].tags}
             />
           </Box>
           <Cards
-            imageURL={projects[2].imageUrl}
+            imageUrl={projects[2].imageUrl}
             title={projects[2].title}
-            desc={projects[2].description}
+            description={projects[2].description}
             githubLink={projects[2].githubLink}
             deployLink={projects[2].deployLink}
-            tag={projects[2].tags}
+            tags={projects[2].tags}
           />
         </SimpleGrid>{' '}
       </Stack>

@@ -23,7 +23,7 @@ import {
 import { links as linksData } from '@/assets/data'
 import { SiLeetcode, SiCodechef } from 'react-icons/si'
 import { FaFile } from 'react-icons/fa'
-import { LinkData } from '@/types'
+import { LinkInfo } from '@/types'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description: 'Find me on various platforms',
   openGraph: {
     title: 'Links | Kunal Agrawal',
-    description: 'Find me on various platforms',  
+    description: 'Find me on various platforms',
   },
 }
 
@@ -49,7 +49,7 @@ const icons: { [key: string]: React.ElementType } = {
 }
 
 export default function LinksPage() {
-  const links: LinkData[] = linksData
+  const links: LinkInfo[] = linksData
 
   return (
     <>

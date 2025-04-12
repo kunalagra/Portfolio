@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import Provider from './provider'
-import {Navbar} from '@/components'
+import { Navbar } from '@/components'
 import { Flex, Stack, Text } from '@chakra-ui/react'
 
 const inter = Inter({
@@ -9,7 +9,7 @@ const inter = Inter({
 })
 
 import type { Metadata } from 'next'
- 
+
 export const metadata: Metadata = {
   title: {
     template: '%s | Kunal Agrawal',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: 'Portfolio Website',
   openGraph: {
     title: 'Kunal Agrawal',
-    description: 'Portfolio Website',  
+    description: 'Portfolio Website',
   },
 }
 export default function RootLayout({

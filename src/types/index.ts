@@ -1,4 +1,15 @@
-export interface ProjectData {
+import React from 'react'
+
+export interface Bio {
+  name: string
+  description: string
+  resume: string
+  linkedin: string
+  github: string
+  mailto: string
+}
+
+export interface Project {
   id?: string | number
   date: string | number | Date
   title: string
@@ -10,29 +21,7 @@ export interface ProjectData {
   type?: string[]
 }
 
-export interface LinkData {
-  name: string
-  url: string
-}
-
-export interface MoreInfoProps {
-  text: string
-  content: React.ReactNode
-}
-export interface CardProps {
-  imageURL: string
-  title: string
-  desc: string
-  githubLink?: string
-  deployLink?: string
-  tag: string[]
-}
-
-export interface ProjectsClientUIProps {
-  projects: ProjectData[]
-}
-
-export interface MilestoneData {
+export interface Milestone {
   id: number
   title: string
   description: string
@@ -40,11 +29,7 @@ export interface MilestoneData {
   url?: string
 }
 
-export interface MilestonesProps {
-  milestones: MilestoneData[]
-}
-
-export interface CertificateData {
+export interface Certificate {
   id: string | number
   link: string
   title: string
@@ -52,18 +37,25 @@ export interface CertificateData {
   issueDate: string | Date
 }
 
+export interface LinkInfo {
+  name: string
+  url: string
+}
+
+export interface ProjectsClientUIProps {
+  projects: Project[]
+}
+
+export interface MilestonesProps {
+  milestones: Milestone[]
+}
+
 export interface CertificateProps {
-  certificates: CertificateData[]
+  certificates: Certificate[]
 }
 
 export interface IntroductionProps {
-  introduction: {
-    name: string
-    github: string
-    linkedin: string
-    mailto: string
-    resume: string
-  }
+  introduction: Bio
 }
 
 export interface SocialLinkButtonProps {
@@ -71,3 +63,13 @@ export interface SocialLinkButtonProps {
   icon: React.ReactNode
   label: string
 }
+
+export interface MoreInfoProps {
+  text: string
+  content: React.ReactNode
+}
+
+export type CardProps = Pick<
+  Project,
+  'imageUrl' | 'title' | 'description' | 'githubLink' | 'deployLink' | 'tags'
+>

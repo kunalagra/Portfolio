@@ -5,6 +5,10 @@ module.exports = {
     externalDir: true,
     optimizePackageImports: ['@chakra-ui/react'],
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en'
+  },
   async redirects() {
     return [
       {

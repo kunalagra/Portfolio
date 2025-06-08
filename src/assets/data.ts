@@ -60,7 +60,7 @@ export const milestones: Milestone[] = [
     date: 'Aug 2024 - Current',
     title: 'Testlify - Backend Developer',
     description:
-      'Analyzed and resolved critical bottlenecks across the application, enhancing API response times by up to 70% for key controllers. Designed and implemented various end-to-end features, including Traffit integration and support for multi-file coding questions.',
+      'Led the development of major ATS integrations (Workday, Crelate, Fountain, Traffit) by collaborating directly with clients to understand use cases, define requirements, and deliver scalable, production-ready solutions. \nImproved API performance by up to 70% through deep refactoring and database optimization, reducing support overhead.\nArchitected and shipped support for multi-file coding questions using Docker, Google Cloud Run, and Filestore, enabling real-time VS Code environments for candidates.',
     url: 'https://testlify.com/',
   },
   {

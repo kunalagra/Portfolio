@@ -57,7 +57,7 @@ export function Navbar() {
                 </Button>
                 <Button asChild variant="ghost" fontSize="md">
                   <Link
-                    href="https://nyxcoder.hashnode.dev/"
+                    href="https://blog.kunalagrawal.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     _hover={{ textDecoration: 'none' }}
@@ -128,7 +128,7 @@ export function Navbar() {
         </Button>
         <Button asChild variant="ghost" p="4" fontSize="md">
           <Link
-            href="https://nyxcoder.hashnode.dev/"
+            href="https://blog.kunalagrawal.com/"
             target="_blank"
             rel="noopener noreferrer"
             _hover={{ textDecoration: 'none' }}

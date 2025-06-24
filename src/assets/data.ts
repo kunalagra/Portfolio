@@ -56,15 +56,20 @@ export const links: LinkInfo[] = [
 
 export const milestones: Milestone[] = [
   {
-    id: 1,
-    date: 'Aug 2024 - Current',
+    date: 'Jun 2025 - Current',
+    title: 'Prodigal - Solution Engineer',
+    description:
+      '404 - Not Found',
+    url: 'https://www.prodigaltech.com/',
+  },
+  {
+    date: 'Aug 2024 - Jun 2025',
     title: 'Testlify - Backend Developer',
     description:
       'Led the development of major ATS integrations (Workday, Crelate, Fountain, Traffit) by collaborating directly with clients to understand use cases, define requirements, and deliver scalable, production-ready solutions. \nImproved API performance by up to 70% through deep refactoring and database optimization, reducing support overhead.\nArchitected and shipped support for multi-file coding questions using Docker, Google Cloud Run, and Filestore, enabling real-time VS Code environments for candidates.',
     url: 'https://testlify.com/',
   },
   {
-    id: 2,
     date: 'Jan 2024 - Apr 2024',
     title: 'Freelancer',
     description:
@@ -72,22 +77,12 @@ export const milestones: Milestone[] = [
     url: 'https://kumail.shop/',
   },
   {
-    id: 3,
-    date: 'Oct 2023 - Jan 2023',
-    title: 'Prodigy InfoTech',
-    description:
-      'Worked on building various client facing features for the new application. Additionally, built automation tools for HR team using Google App Scripts to ease the workflow.',
-    url: 'https://prodigyinfotech.dev/',
-  },
-  {
-    id: 4,
     date: 'Jul 2022 - Jun 2023',
     title: 'Founder & President',
     description:
       'Kick-started Mind Benders Club - TCET to oversee the development of students in upcoming technologies (AI/DS/ML).\nLed a team of 12 to conduct 8 workshops with over 1K+ participants and 1 Hackathon with 25+ teams.\nSupervised day-to-day activities, oversee the development of Website & Blog with CI/CD pipelines.',
   },
   {
-    id: 5,
     date: 'Aug 2022 - Sep 2022',
     title: `Social Summer of Code'22`,
     description: `Ranked 16 out of 500+ particiapnts.\nDeveloped various Deep Learning Models with Visualization. Noticable models developed includes Sea Animal Detection & Grapevine Leaves Classification.\n Additonally, Reworked the Manifest for PortoflioShop, and optimized it for best practices for wide comptability across platforms`,
@@ -96,77 +91,66 @@ export const milestones: Milestone[] = [
 ]
 export const certificates: Certificate[] = [
   {
-    id: 11,
     title: 'Stanford - Machine Learning',
     organization: 'Coursera',
     issueDate: '2022-06-19',
     link: 'https://coursera.org/share/c715d24542b410805a2ff3034949858d',
   },
   {
-    id: 12,
     title: 'Duke - Introduction to Machine Learning',
     organization: 'Coursera',
     issueDate: '2021-06-14',
     link: 'https://coursera.org/share/91038c617999f42f292e51cb9ca28221',
   },
   {
-    id: 13,
     title: 'Spoken Tutorials - C++',
     organization: 'IIT Bombay',
     issueDate: '2021-05-24',
     link: 'https://drive.google.com/file/d/10mALMGuQrSt5Pmxue66Xjh8aFSsbpBtX/view',
   },
   {
-    id: 14,
     title: 'IBM - What is Data Science?',
     organization: 'Coursera',
     issueDate: '2023-08-09',
     link: 'https://coursera.org/share/45ed27bd605ea0f0931d11f18d0ddacf',
   },
   {
-    id: 15,
     title: 'IBM - Tools for Data Science',
     organization: 'Coursera',
     issueDate: '2023-12-10',
     link: 'https://coursera.org/share/8445d122a0022e00753fe2b2c9137cff',
   },
   {
-    id: 16,
     title: 'Applications of AI for Anomaly Detection',
     organization: 'Nvidia',
     issueDate: '2022-07-23',
     link: 'https://courses.nvidia.com/certificates/2661343a40c84c09947b44fe6a4b01f4/',
   },
   {
-    id: 17,
     title: 'Fundamentals of Deep Learning',
     organization: 'Nvidia',
     issueDate: '2022-07-16',
     link: 'https://courses.nvidia.com/certificates/b38a698150c5410c9afeb954cf87468c/',
   },
   {
-    id: 18,
     title: 'Applications of AI for Predictive Maintenance',
     organization: 'Nvidia',
     issueDate: '2022-07-01',
     link: 'https://courses.nvidia.com/certificates/ba9ef2ec957f422bbe8b6d44f7be65b3/',
   },
   {
-    id: 19,
     title: 'Building Conversational AI Applications',
     organization: 'Nvidia',
     issueDate: '2022-07-09',
     link: 'https://courses.nvidia.com/certificates/09088dd062a54ff18d01fe011eb7530c/',
   },
   {
-    id: 20,
     title: 'SQL',
     organization: 'Mimo',
     issueDate: '2024-03-06',
     link: 'https://drive.google.com/file/d/1y4ysHxLyOAxBMPM42IqJTdeBapXWhpYc/view',
   },
   {
-    id: 21,
     title: 'Chainlink Bootcamp 2024',
     organization: 'Chainlink',
     issueDate: '2024-02-23',

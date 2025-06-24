@@ -16,7 +16,9 @@ import {
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 import { Milestone, MilestonesProps } from '@/types'
 
-const Card = ({ id, title, description, date, url }: Milestone) => {
+type CardProps = Milestone & { id: number }
+
+const Card = ({ id, title, description, date, url }: CardProps) => {
   const isEvenId = id % 2 === 0
 
   const cardPointerStyles = {
@@ -56,7 +58,7 @@ const Card = ({ id, title, description, date, url }: Milestone) => {
         display: 'block',
       }}
     >
-      <Box>
+      <Box flex={1}>
         <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}>
           {date}
         </Text>
@@ -145,12 +147,13 @@ export const Milestones = ({ milestones }: MilestonesProps) => {
       <Heading as="h3" size="3xl" mb={18} textAlign="center">
         Experience
       </Heading>
-      {milestones.map((milestone) => {
-        const isEvenId = milestone.id % 2 === 0
+      {milestones.map((milestone,index) => {
+        const idx = index+1
+        const isEvenId = idx% 2 === 0
         return (
-          <Flex key={milestone.id} mb="2.5">
+          <Flex key={index} mb="2.5">
             <Box flex={1} display={{ base: 'none', md: 'block' }}>
-              {isEvenId ? <EmptyCard /> : <Card {...milestone} />}
+              {isEvenId ? <EmptyCard /> : <Card {...milestone} id={idx} />}
             </Box>
 
             <LineWithDot />
@@ -158,7 +161,7 @@ export const Milestones = ({ milestones }: MilestonesProps) => {
             <Box flex={1} display="block">
               {' '}
               <Box display={{ base: 'block', md: isEvenId ? 'block' : 'none' }}>
-                <Card {...milestone} />
+                <Card {...milestone} id={idx} />
               </Box>
               <Box display={{ base: 'none', md: isEvenId ? 'none' : 'block' }}>
                 <EmptyCard />

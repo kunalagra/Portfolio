@@ -22,7 +22,6 @@ export interface Project {
 }
 
 export interface Milestone {
-  id: number
   title: string
   description: string
   date: string
@@ -30,7 +29,6 @@ export interface Milestone {
 }
 
 export interface Certificate {
-  id: string | number
   link: string
   title: string
   organization: string

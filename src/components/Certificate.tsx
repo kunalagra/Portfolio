@@ -41,9 +41,9 @@ export function Certificates({ certificates }: CertificateProps) {
       </Flex>
 
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={{ base: 2, md: 4 }}>
-        {certificates.map((certificate) => (
+        {certificates.map((certificate, index) => (
           <Stack
-            key={certificate.id}
+            key={index}
             w="100%"
             borderWidth="1px"
             borderColor={{ base: 'border.muted', md: 'borderColor' }}

@@ -1,12 +1,12 @@
-import { Box, Center, Heading, Icon, Text, VStack } from '@chakra-ui/react'
-import { TbError404 } from 'react-icons/tb'
+import { Box, Center, Heading, Icon, Text, VStack } from "@chakra-ui/react";
+import { TbError404 } from "react-icons/tb";
 
 export default function NotFound() {
   return (
     <Box
       css={{
-        '--header-height': '104px',
-        '--content-height': 'calc(100dvh - var(--header-height))',
+        "--header-height": "104px",
+        "--content-height": "calc(100dvh - var(--header-height))",
       }}
     >
       <Center minH="90dvh">
@@ -19,5 +19,5 @@ export default function NotFound() {
         </VStack>
       </Center>
     </Box>
-  )
+  );
 }

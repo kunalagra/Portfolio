@@ -1,33 +1,33 @@
-import { Inter } from 'next/font/google'
-import Provider from './provider'
-import { Navbar } from '@/components'
-import { Flex, Stack, Text } from '@chakra-ui/react'
+import { Flex, Stack, Text } from "@chakra-ui/react";
+import { Inter } from "next/font/google";
+import { Navbar } from "@/components";
+import Provider from "./provider";
 
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  display: "swap",
+});
 
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Kunal Agrawal',
-    default: 'Kunal Agrawal',
+    template: "%s | Kunal Agrawal",
+    default: "Kunal Agrawal",
   },
-  description: 'Portfolio Website',
+  description: "Portfolio Website",
   openGraph: {
-    title: 'Kunal Agrawal',
-    description: 'Portfolio Website',
+    title: "Kunal Agrawal",
+    description: "Portfolio Website",
   },
-}
+};
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
       <head />
       <body>
         <Provider>
@@ -46,5 +46,5 @@ export default function RootLayout({
         </Provider>
       </body>
     </html>
-  )
+  );
 }

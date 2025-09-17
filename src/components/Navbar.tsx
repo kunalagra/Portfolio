@@ -1,30 +1,31 @@
-'use client' // Required for useState
+"use client"; // Required for useState
 
-import React, { useState } from 'react' // Import useState
 import {
   Button,
+  CloseButton,
+  Drawer,
   Flex, // Keep Flex
+  HStack,
   IconButton, // Import IconButton
   Link,
   Portal,
+  Span,
   Stack,
   Text,
-  Drawer,
-  Span,
-  HStack,
-  CloseButton,
-} from '@chakra-ui/react'
-import NextLink from 'next/link'
-import { AiOutlineMenu } from 'react-icons/ai'
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import type React from "react"; // Import useState
+import { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const Bracket = ({ children }: { children: React.ReactNode }) => (
     <Span color="fg.muted" fontWeight="semibold">
       {children}
     </Span>
-  )
+  );
 
   const NavbarDrawer = () => (
     <Drawer.Root
@@ -36,12 +37,12 @@ export function Navbar() {
         <Drawer.Backdrop />
         <Drawer.Positioner>
           <Drawer.Content>
-            {' '}
+            {" "}
             <Drawer.CloseTrigger position="absolute" top="3" right="3" />
             <Drawer.Header borderBottomWidth="1px" borderColor="border">
-              {' '}
+              {" "}
               <Drawer.Title>
-                <Bracket>{'{'}</Bracket>K<Bracket>{'}'}</Bracket>
+                <Bracket>{"{"}</Bracket>K<Bracket>{"}"}</Bracket>
               </Drawer.Title>
             </Drawer.Header>
             <Drawer.Body>
@@ -60,7 +61,7 @@ export function Navbar() {
                     href="https://blog.kunalagrawal.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    _hover={{ textDecoration: 'none' }}
+                    _hover={{ textDecoration: "none" }}
                   >
                     Blogs
                   </Link>
@@ -90,7 +91,7 @@ export function Navbar() {
         </Drawer.Positioner>
       </Portal>
     </Drawer.Root>
-  )
+  );
 
   return (
     // Removed outer Box, position sticky on Flex
@@ -103,16 +104,16 @@ export function Navbar() {
       justifyContent="space-between"
       alignItems="center"
       width="100%"
-      px={{ base: '5vw', md: '8vw' }} // Adjusted padding slightly
+      px={{ base: "5vw", md: "8vw" }} // Adjusted padding slightly
       py="3"
       // borderBottomWidth="1px" // Use theme border width
       borderColor="border" // Use theme token
       bg="bg" // Use theme token
     >
-      <Link asChild _hover={{ textDecoration: 'none' }}>
+      <Link asChild _hover={{ textDecoration: "none" }}>
         <NextLink href="/">
           <Text color="displayColor" fontWeight="bold" fontSize="3xl">
-            <Bracket>{'{'}</Bracket>K<Bracket>{'}'}</Bracket>
+            <Bracket>{"{"}</Bracket>K<Bracket>{"}"}</Bracket>
           </Text>
         </NextLink>
       </Link>
@@ -120,7 +121,7 @@ export function Navbar() {
       <HStack
         as="nav"
         gap="3"
-        display={{ base: 'none', md: 'flex' }}
+        display={{ base: "none", md: "flex" }}
         color="textSecondary"
       >
         <Button asChild variant="ghost" p="4" fontSize="md">
@@ -131,7 +132,7 @@ export function Navbar() {
             href="https://blog.kunalagrawal.com/"
             target="_blank"
             rel="noopener noreferrer"
-            _hover={{ textDecoration: 'none' }}
+            _hover={{ textDecoration: "none" }}
           >
             Blogs
           </Link>
@@ -148,13 +149,13 @@ export function Navbar() {
         aria-label="Open Menu"
         onClick={() => setOpen(true)}
         variant="ghost"
-        display={{ base: 'inline-flex', md: 'none' }}
-        size={'lg'}
+        display={{ base: "inline-flex", md: "none" }}
+        size={"lg"}
       >
         <AiOutlineMenu />
       </IconButton>
 
       <NavbarDrawer />
     </Flex>
-  )
+  );
 }

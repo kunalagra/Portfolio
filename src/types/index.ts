@@ -1,73 +1,73 @@
-import React from 'react'
+import type React from "react";
 
 export interface Bio {
-  name: string
-  description: string
-  resume: string
-  linkedin: string
-  github: string
-  mailto: string
+  name: string;
+  description: string;
+  resume: string;
+  linkedin: string;
+  github: string;
+  mailto: string;
 }
 
 export interface Project {
-  id?: string | number
-  date: string | number | Date
-  title: string
-  imageUrl: string
-  description: string
-  githubLink?: string
-  deployLink?: string
-  tags: string[]
-  type?: string[]
+  id?: string | number;
+  date: string | number | Date;
+  title: string;
+  imageUrl: string;
+  description: string;
+  githubLink?: string;
+  deployLink?: string;
+  tags: string[];
+  type?: string[];
 }
 
 export interface Milestone {
-  title: string
-  description: string
-  date: string
-  url?: string
+  title: string;
+  description: string;
+  date: string;
+  url?: string;
 }
 
 export interface Certificate {
-  link: string
-  title: string
-  organization: string
-  issueDate: string | Date
+  link: string;
+  title: string;
+  organization: string;
+  issueDate: string | Date;
 }
 
 export interface LinkInfo {
-  name: string
-  url: string
+  name: string;
+  url: string;
 }
 
 export interface ProjectsClientUIProps {
-  projects: Project[]
+  projects: Project[];
 }
 
 export interface MilestonesProps {
-  milestones: Milestone[]
+  milestones: Milestone[];
 }
 
 export interface CertificateProps {
-  certificates: Certificate[]
+  certificates: Certificate[];
 }
 
 export interface IntroductionProps {
-  introduction: Bio
+  introduction: Bio;
 }
 
 export interface SocialLinkButtonProps {
-  href: string
-  icon: React.ReactNode
-  label: string
+  href: string;
+  icon: React.ReactNode;
+  label: string;
 }
 
 export interface MoreInfoProps {
-  text: string
-  content: React.ReactNode
+  text: string;
+  content: React.ReactNode;
 }
 
 export type CardProps = Pick<
   Project,
-  'imageUrl' | 'title' | 'description' | 'githubLink' | 'deployLink' | 'tags'
->
+  "imageUrl" | "title" | "description" | "githubLink" | "deployLink" | "tags"
+>;

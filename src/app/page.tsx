@@ -1,13 +1,13 @@
-import { Stack } from '@chakra-ui/react'
-import { projects, bioData, certificates, milestones } from '@/assets/data'
+import { Stack } from "@chakra-ui/react";
+import { bioData, certificates, milestones, projects } from "@/assets/data";
 import {
   AboutMe,
-  Milestones,
-  FeaturedProjects,
   Certificates,
   ContactMe,
+  FeaturedProjects,
   Introduction,
-} from '@/components'
+  Milestones,
+} from "@/components";
 
 export default async function Page() {
   return (
@@ -16,8 +16,8 @@ export default async function Page() {
       gap="144px"
       justifyContent="center"
       alignItems="flex-start"
-      px={{ base: '5vw', md: '10vw' }}
-      mt={{ base: '15vh', md: '22.5vh' }}
+      px={{ base: "5vw", md: "10vw" }}
+      mt={{ base: "15vh", md: "22.5vh" }}
     >
       <Introduction introduction={bioData} />
       <AboutMe />
@@ -26,5 +26,5 @@ export default async function Page() {
       <Certificates certificates={certificates} />
       <ContactMe introduction={bioData} />
     </Stack>
-  )
+  );
 }

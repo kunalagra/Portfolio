@@ -1,33 +1,33 @@
 import {
-  defineConfig,
   createSystem,
   defaultConfig,
+  defineConfig,
   defineSemanticTokens,
   defineTokens,
-} from '@chakra-ui/react'
+} from "@chakra-ui/react";
 
 const fluidType = (minFont: number, maxFont: number): string => {
   // Added type annotations: numbers in, string out
-  const XX = 768 / 100
-  const YY = (100 * (maxFont - minFont)) / (1920 - 768)
-  const ZZ = minFont / 16
-  return `calc(${ZZ}rem + ((1vw - ${XX}px) * ${YY}))`
-}
+  const XX = 768 / 100;
+  const YY = (100 * (maxFont - minFont)) / (1920 - 768);
+  const ZZ = minFont / 16;
+  return `calc(${ZZ}rem + ((1vw - ${XX}px) * ${YY}))`;
+};
 
 const tokens = defineTokens({
   colors: {
-    background: { value: '#12141D' },
-    secondary: { value: '#080808' },
-    complement: { value: '#FA934F' },
-    displayColor: { value: '#FFFFFF' },
-    textPrimary: { value: '#D1D5DB' },
-    textSecondary: { value: '#8F9094' },
-    button1: { value: '#439afe' },
-    button2: { value: '#F6A20E' },
-    button3: { value: '#5132BF' },
-    borderColor: { value: '#111111' },
-    cardbg: { value: '#141414' },
-    cardPoint: { value: 'transparent #141414' },
+    background: { value: "#12141D" },
+    secondary: { value: "#080808" },
+    complement: { value: "#FA934F" },
+    displayColor: { value: "#FFFFFF" },
+    textPrimary: { value: "#D1D5DB" },
+    textSecondary: { value: "#8F9094" },
+    button1: { value: "#439afe" },
+    button2: { value: "#F6A20E" },
+    button3: { value: "#5132BF" },
+    borderColor: { value: "#111111" },
+    cardbg: { value: "#141414" },
+    cardPoint: { value: "transparent #141414" },
   },
   fonts: {
     // Wrap font values in { value: ... }
@@ -40,9 +40,9 @@ const tokens = defineTokens({
   },
   fontWeights: {
     // Wrap values in { value: ... } and ensure they are strings
-    normal: { value: '300' },
-    medium: { value: '600' },
-    bold: { value: '700' },
+    normal: { value: "300" },
+    medium: { value: "600" },
+    bold: { value: "700" },
   },
   fontSizes: {
     // Wrap values (including fluidType results) in { value: ... }
@@ -63,7 +63,7 @@ const tokens = defineTokens({
     // '7xl': { value: fluidType(32, 64) },
     // '8xl': { value: fluidType(36, 72) },
   },
-})
+});
 
 const semanticTokens = defineSemanticTokens({
   colors: {
@@ -72,48 +72,48 @@ const semanticTokens = defineSemanticTokens({
     bg: {
       surface: {
         // Used for Card bg. Was #141414 dark. Light equivalent? e.g., white or light gray
-        value: { base: '{colors.white}', _dark: '{colors.cardbg}' }, // map to your #080808? or keep #141414?
+        value: { base: "{colors.white}", _dark: "{colors.cardbg}" }, // map to your #080808? or keep #141414?
       },
     },
     fg: {
       // Used for main text, maps to your displayColor
-      value: { base: '{colors.gray.800}', _dark: '{colors.displayColor}' }, // e.g. Dark gray for light mode
+      value: { base: "{colors.gray.800}", _dark: "{colors.displayColor}" }, // e.g. Dark gray for light mode
     },
-    'fg.muted': {
+    "fg.muted": {
       // Used for secondary text, maps to your textSecondary
-      value: { base: '{colors.gray.600}', _dark: '{colors.textSecondary}' }, // e.g. Medium gray for light mode
+      value: { base: "{colors.gray.600}", _dark: "{colors.textSecondary}" }, // e.g. Medium gray for light mode
     },
     border: {
       // Used for timeline line. Was gray.200 / gray.700
-      value: { base: '{colors.gray.200}', _dark: '{colors.gray.700}' },
+      value: { base: "{colors.gray.200}", _dark: "{colors.gray.700}" },
     },
-    'border.emphasized': {
+    "border.emphasized": {
       // Used for timeline dot. Was gray.600 / gray.200
-      value: { base: '{colors.gray.600}', _dark: '{colors.gray.200}' },
+      value: { base: "{colors.gray.600}", _dark: "{colors.gray.200}" },
     },
   },
-})
+});
 
 // --- Define the Main Configuration ---
 const config = defineConfig({
   // Standard v3 config options
-  cssVarsRoot: ':where(:root, :host)',
-  cssVarsPrefix: 'ck', // Or your preferred prefix
+  cssVarsRoot: ":where(:root, :host)",
+  cssVarsPrefix: "ck", // Or your preferred prefix
   theme: {
     breakpoints: {
-      base: '0em',
-      sm: '30em',
-      md: '48em',
-      lg: '80em',
-      xl: '80em',
-      '2xl': '96em',
+      base: "0em",
+      sm: "30em",
+      md: "48em",
+      lg: "80em",
+      xl: "80em",
+      "2xl": "96em",
     },
     tokens: tokens,
     semanticTokens: semanticTokens,
   },
   // Add other config options if needed (e.g., strictTokens: true)
-})
+});
 
-const customTheme = createSystem(defaultConfig, config)
+const customTheme = createSystem(defaultConfig, config);
 
-export default customTheme
+export default customTheme;

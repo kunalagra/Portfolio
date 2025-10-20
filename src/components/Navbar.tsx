@@ -13,7 +13,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
+import { Link as RouterLink } from "@tanstack/react-router";
 import type React from "react"; // Import useState
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -22,7 +22,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   const Bracket = ({ children }: { children: React.ReactNode }) => (
-    <Span color="fg.muted" fontWeight="semibold">
+    <Span color="textSecondary" fontWeight="semibold">
       {children}
     </Span>
   );
@@ -54,14 +54,21 @@ export function Navbar() {
                   fontSize="md"
                   onClick={() => setOpen(false)}
                 >
-                  <NextLink href="/">Home</NextLink>
+                  <RouterLink
+                    to="/"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    Home
+                  </RouterLink>
                 </Button>
-                <Button asChild variant="ghost" fontSize="md">
+                <Button asChild variant="ghost" fontSize="md" px="4" py="2">
                   <Link
                     href="https://blog.kunalagrawal.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     _hover={{ textDecoration: "none" }}
+                    display="flex"
+                    alignItems="center"
                   >
                     Blogs
                   </Link>
@@ -72,7 +79,12 @@ export function Navbar() {
                   fontSize="md"
                   onClick={() => setOpen(false)}
                 >
-                  <NextLink href="/links">Links</NextLink>
+                  <RouterLink
+                    to="/links"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    Links
+                  </RouterLink>
                 </Button>
                 <Button
                   asChild
@@ -80,7 +92,12 @@ export function Navbar() {
                   fontSize="md"
                   onClick={() => setOpen(false)}
                 >
-                  <NextLink href="/projects">Projects</NextLink>
+                  <RouterLink
+                    to="/projects"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    Projects
+                  </RouterLink>
                 </Button>
               </Stack>
             </Drawer.Body>
@@ -111,11 +128,11 @@ export function Navbar() {
       bg="bg" // Use theme token
     >
       <Link asChild _hover={{ textDecoration: "none" }}>
-        <NextLink href="/">
+        <RouterLink to="/">
           <Text color="displayColor" fontWeight="bold" fontSize="3xl">
             <Bracket>{"{"}</Bracket>K<Bracket>{"}"}</Bracket>
           </Text>
-        </NextLink>
+        </RouterLink>
       </Link>
 
       <HStack
@@ -125,7 +142,9 @@ export function Navbar() {
         color="textSecondary"
       >
         <Button asChild variant="ghost" p="4" fontSize="md">
-          <NextLink href="/">Home</NextLink>
+          <RouterLink to="/" style={{ display: "flex", alignItems: "center" }}>
+            Home
+          </RouterLink>
         </Button>
         <Button asChild variant="ghost" p="4" fontSize="md">
           <Link
@@ -133,15 +152,27 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{ textDecoration: "none" }}
+            display="flex"
+            alignItems="center"
           >
             Blogs
           </Link>
         </Button>
         <Button asChild variant="ghost" p="4" fontSize="md">
-          <NextLink href="/links">Links</NextLink>
+          <RouterLink
+            to="/links"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            Links
+          </RouterLink>
         </Button>
         <Button asChild variant="ghost" p="4" fontSize="md">
-          <NextLink href="/projects">Projects</NextLink>
+          <RouterLink
+            to="/projects"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            Projects
+          </RouterLink>
         </Button>
       </HStack>
 

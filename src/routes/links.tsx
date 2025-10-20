@@ -9,6 +9,7 @@ import {
   HStack,
   Link,
 } from "@chakra-ui/react";
+import { createFileRoute } from "@tanstack/react-router";
 
 import {
   FaFilePdf,
@@ -24,16 +25,16 @@ import { links as linksData } from "@/assets/data";
 import { SiLeetcode, SiCodechef } from "react-icons/si";
 import { FaFile } from "react-icons/fa";
 import type { LinkInfo } from "@/types";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Links",
-  description: "Find me on various platforms",
-  openGraph: {
-    title: "Links | Kunal Agrawal",
-    description: "Find me on various platforms",
-  },
-};
+export const Route = createFileRoute("/links")({
+  head: () => ({
+    meta: [
+      { title: "Links | Kunal Agrawal" },
+      { name: "description", content: "Find me on various platforms" },
+    ],
+  }),
+  component: LinksPage,
+});
 
 const icons: { [key: string]: React.ElementType } = {
   Linkedin: FaLinkedin,
@@ -48,7 +49,7 @@ const icons: { [key: string]: React.ElementType } = {
   HackerRank: FaHackerrank,
 };
 
-export default function LinksPage() {
+function LinksPage() {
   const links: LinkInfo[] = linksData;
 
   return (

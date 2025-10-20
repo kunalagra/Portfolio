@@ -5,6 +5,7 @@ export * from "./ContactMe";
 export * from "./FeaturedProjects";
 export * from "./Introduction";
 export * from "./Navbar";
+export * from "./NotFound";
 export * from "./ProjectsUI";
 export * from "./SocialLinkButton";
 export * from "./Timeline";

@@ -14,6 +14,10 @@ export default defineConfig({
     }),
     tanstackStart({
       srcDirectory: "src",
+      sitemap: {
+        enabled: true,
+        host: "https://kunalagrawal.com/",
+      },
       prerender: {
         // Enable prerendering
         enabled: true,

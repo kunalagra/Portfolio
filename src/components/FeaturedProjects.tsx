@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Box,
   Flex,
@@ -9,7 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
+import { Link as RouterLink } from "@tanstack/react-router";
 import { Cards } from "@/components";
 import type { ProjectsClientUIProps } from "@/types";
 
@@ -41,10 +39,7 @@ export function FeaturedProjects({ projects }: ProjectsClientUIProps) {
               color="button1"
               _hover={{ color: "button2" }}
             >
-              <NextLink href="/projects" passHref>
-                {" "}
-                Explore more →
-              </NextLink>
+              <RouterLink to="/projects"> Explore more →</RouterLink>
             </Link>
           </Flex>{" "}
           <Text fontSize={{ base: "md", md: "xl" }} color="textSecondary">
@@ -56,7 +51,7 @@ export function FeaturedProjects({ projects }: ProjectsClientUIProps) {
             fontSize={{ base: "md", md: "xl" }}
             _hover={{ color: "button1" }}
           >
-            <NextLink href="/projects">Explore more →</NextLink>
+            <RouterLink to="/projects">Explore more →</RouterLink>
           </Link>
         </Stack>
         <Cards

@@ -1,7 +1,7 @@
 
 ## ⚡ Portfolio
 
-My portfolio website built on [Next.js](https://nextjs.org/docs/) and [Chakra UI](https://chakra-ui.com/docs).
+My portfolio website built on [TanStack](https://tanstack.com/start/latest) and [Chakra UI](https://chakra-ui.com/docs).
 
 Feel free to fork this repository to make your own portfolio, and if you liked the repo, kindly support it by giving it a star ⭐!
 
@@ -15,12 +15,12 @@ Start the project by `npm run dev`
 You can deploy easily by using [Vercel](https://vercel.com/) 🎉
   
 ## 📌 Overview
-`src/app/page.tsx` = Homepage
+`src/routes/index.tsx` = Homepage
 
-`src/app/projects/page.tsx` = Projects archive page
+`src/routes/projects.tsx` = Projects archive page
 
-`src/app//links/page.tsx` = Links page
+`src/routes/links.tsx` = Links page
 
 ## ⚙ Tech Stack
-- Next.js
+- TanStack Start
 - Chakra UI

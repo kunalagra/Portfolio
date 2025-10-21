@@ -1,4 +1,5 @@
 import { Stack } from "@chakra-ui/react";
+import { createFileRoute } from "@tanstack/react-router";
 import { bioData, certificates, milestones, projects } from "@/assets/data";
 import {
   AboutMe,
@@ -9,7 +10,17 @@ import {
   Milestones,
 } from "@/components";
 
-export default async function Page() {
+export const Route = createFileRoute("/")({
+  staticData: {
+    bioData,
+    certificates,
+    milestones,
+    projects,
+  },
+  component: Index,
+});
+
+function Index() {
   return (
     <Stack
       as="main"

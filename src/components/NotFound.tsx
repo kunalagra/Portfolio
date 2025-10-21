@@ -1,7 +1,7 @@
 import { Box, Center, Heading, Icon, Text, VStack } from "@chakra-ui/react";
 import { TbError404 } from "react-icons/tb";
 
-export default function NotFound() {
+export function NotFound() {
   return (
     <Box
       css={{

@@ -1,4 +1,3 @@
-"use client";
 import {
   Box,
   chakra,
@@ -61,12 +60,6 @@ export function Introduction({ introduction }: IntroductionProps) {
         <chakra.br display={{ base: "none", md: "inline" }} />
         interest in Computer Science.
       </Heading>
-
-      <Text fontSize="display3" color="textSecondary">
-        {" "}
-        {"🚀"} {"Exploring opportunities and side projects."}
-        <br />
-      </Text>
 
       <HStack gap={4}>
         <SocialLinkButton

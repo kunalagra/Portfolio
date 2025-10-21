@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+/.tanstack/
 /out/
 
 # production
@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# TanStack Start build artifacts and the generated route manifest
+.output
+.vscode
+.nitro

@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import viteReact from "@vitejs/plugin-react";
 import { nitro } from "nitro/vite";
-
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 export default defineConfig({
   server: {
     port: 3000,
@@ -12,6 +12,9 @@ export default defineConfig({
     tsConfigPaths({
       projects: ["./tsconfig.json"],
     }),
+    tanstackRouter({
+      autoCodeSplitting: true,
+    }),
     tanstackStart({
       srcDirectory: "src",
       sitemap: {
@@ -19,7 +22,7 @@ export default defineConfig({
         host: "https://kunalagrawal.com/",
       },
       prerender: {
-        // Enable prerendering
+        // Pre-rendering enabled for SEO with proper SSR
         enabled: true,
 
         // Enable if you need pages to be at `/page/index.html` instead of `/page.html`

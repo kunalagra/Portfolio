@@ -1,4 +1,3 @@
-"use client";
 import { Button, Link, Text } from "@chakra-ui/react";
 import type React from "react";
 import type { SocialLinkButtonProps } from "@/types";

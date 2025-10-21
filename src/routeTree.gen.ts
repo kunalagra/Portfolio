@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as LinksRouteImport } from './routes/links'
 import { Route as CvRouteImport } from './routes/cv'
-import { Route as CVRouteImport } from './routes/CV'
 import { Route as IndexRouteImport } from './routes/index'
 
 const ProjectsRoute = ProjectsRouteImport.update({
@@ -30,11 +29,6 @@ const CvRoute = CvRouteImport.update({
   path: '/cv',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CVRoute = CVRouteImport.update({
-  id: '/CV',
-  path: '/CV',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -43,14 +37,12 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/CV': typeof CVRoute
   '/cv': typeof CvRoute
   '/links': typeof LinksRoute
   '/projects': typeof ProjectsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/CV': typeof CVRoute
   '/cv': typeof CvRoute
   '/links': typeof LinksRoute
   '/projects': typeof ProjectsRoute
@@ -58,22 +50,20 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/CV': typeof CVRoute
   '/cv': typeof CvRoute
   '/links': typeof LinksRoute
   '/projects': typeof ProjectsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/CV' | '/cv' | '/links' | '/projects'
+  fullPaths: '/' | '/cv' | '/links' | '/projects'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/CV' | '/cv' | '/links' | '/projects'
-  id: '__root__' | '/' | '/CV' | '/cv' | '/links' | '/projects'
+  to: '/' | '/cv' | '/links' | '/projects'
+  id: '__root__' | '/' | '/cv' | '/links' | '/projects'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  CVRoute: typeof CVRoute
   CvRoute: typeof CvRoute
   LinksRoute: typeof LinksRoute
   ProjectsRoute: typeof ProjectsRoute
@@ -102,13 +92,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CvRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/CV': {
-      id: '/CV'
-      path: '/CV'
-      fullPath: '/CV'
-      preLoaderRoute: typeof CVRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -121,7 +104,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  CVRoute: CVRoute,
   CvRoute: CvRoute,
   LinksRoute: LinksRoute,
   ProjectsRoute: ProjectsRoute,

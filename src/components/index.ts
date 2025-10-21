@@ -3,6 +3,7 @@ export * from "./Card";
 export * from "./Certificate";
 export * from "./ContactMe";
 export * from "./FeaturedProjects";
+export * from "./Footer";
 export * from "./Introduction";
 export * from "./Navbar";
 export * from "./NotFound";

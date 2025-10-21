@@ -33,6 +33,9 @@ export const Route = createFileRoute("/links")({
       { name: "description", content: "Find me on various platforms" },
     ],
   }),
+  staticData: {
+    linksData,
+  },
   component: LinksPage,
 });
 

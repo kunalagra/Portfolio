@@ -1,4 +1,4 @@
-import { ChakraProvider, Flex, Stack, Text } from "@chakra-ui/react";
+import { ChakraProvider, Flex } from "@chakra-ui/react";
 import {
   Outlet,
   createRootRoute,
@@ -6,7 +6,8 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import customTheme from "@/styles/theme";
-import { Navbar, NotFound } from "@/components";
+import { Navbar, NotFound, Footer } from "@/components";
+import { useEffect, useState } from "react";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -49,6 +50,12 @@ export const Route = createRootRoute({
 });
 
 function RootLayout() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <head>
@@ -60,11 +67,7 @@ function RootLayout() {
           <Flex as="main" justifyContent="center" flexDirection="column">
             <Outlet />
           </Flex>
-          <Stack textAlign="center" mt="3" width="100%" align="center">
-            <Text fontSize="sm" color="textSecondary">
-              Designed and Developed by Kunal Agrawal.
-            </Text>
-          </Stack>
+          {isClient && <Footer />}
         </ChakraProvider>
         <Scripts />
       </body>

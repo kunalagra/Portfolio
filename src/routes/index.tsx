@@ -11,6 +11,12 @@ import {
 } from "@/components";
 
 export const Route = createFileRoute("/")({
+  staticData: {
+    bioData,
+    certificates,
+    milestones,
+    projects,
+  },
   component: Index,
 });
 

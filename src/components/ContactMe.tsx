@@ -1,4 +1,3 @@
-"use client";
 import { Heading, HStack, Stack } from "@chakra-ui/react";
 import { FaEnvelope, FaFilePdf, FaLinkedin } from "react-icons/fa6";
 import { SocialLinkButton } from "@/components";

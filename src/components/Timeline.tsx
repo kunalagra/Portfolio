@@ -1,5 +1,3 @@
-"use client"; // Still needed if other client hooks remain or for potential future use
-
 import {
   Box,
   Container,

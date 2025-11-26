@@ -22,11 +22,28 @@ export default defineConfig({
         host: "https://kunalagrawal.com/",
       },
       prerender: {
-        // Pre-rendering is disabled because it's incompatible with the Nitro Vite plugin.
-        // The Nitro plugin's configurePreviewServer hook requires build artifacts that don't
-        // exist yet during the prerender phase, causing the Vite preview server to fail.
-        // SSR is still enabled for SEO benefits.
-        enabled: false,
+        // Pre-rendering enabled for SEO with proper SSR
+        enabled: true,
+
+        // Enable if you need pages to be at `/page/index.html` instead of `/page.html`
+        autoSubfolderIndex: true,
+
+        // How many prerender jobs to run at once
+        concurrency: 14,
+
+        // Whether to extract links from the HTML and prerender them also
+        crawlLinks: true,
+
+        // Number of times to retry a failed prerender job
+        retryCount: 2,
+
+        // Delay between retries in milliseconds
+        retryDelay: 1000,
+
+        // Callback when page is successfully rendered
+        onSuccess: ({ page }) => {
+          console.log(`Rendered ${page.path}!`);
+        },
       },
     }),
     nitro(),

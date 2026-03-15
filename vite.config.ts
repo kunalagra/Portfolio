@@ -1,6 +1,5 @@
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { defineConfig } from "vite";
-import tsConfigPaths from "vite-tsconfig-paths";
 import viteReact from "@vitejs/plugin-react";
 import { nitro } from "nitro/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
@@ -9,9 +8,6 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [
-    tsConfigPaths({
-      projects: ["./tsconfig.json"],
-    }),
     tanstackRouter({
       autoCodeSplitting: true,
     }),
@@ -49,4 +45,7 @@ export default defineConfig({
     nitro(),
     viteReact(),
   ],
+  resolve: {
+    tsconfigPaths: true
+  }
 });

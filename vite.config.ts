@@ -2,15 +2,11 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { defineConfig } from "vite";
 import viteReact from "@vitejs/plugin-react";
 import { nitro } from "nitro/vite";
-import { tanstackRouter } from "@tanstack/router-plugin/vite";
 export default defineConfig({
   server: {
     port: 3000,
   },
   plugins: [
-    tanstackRouter({
-      autoCodeSplitting: true,
-    }),
     tanstackStart({
       srcDirectory: "src",
       sitemap: {

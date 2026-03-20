@@ -17,6 +17,10 @@ export default defineConfig({
         // Pre-rendering enabled for SEO with proper SSR
         enabled: true,
 
+        // Avoid prerendering external redirect route.
+        // Otherwise the crawler can snapshot Google Drive HTML at /cv.
+        filter: (page) => page.path !== "/cv",
+
         // Enable if you need pages to be at `/page/index.html` instead of `/page.html`
         autoSubfolderIndex: true,
 

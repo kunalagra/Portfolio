@@ -159,6 +159,18 @@ export const certificates: Certificate[] = [
 
 export const projects: Project[] = [
   {
+    title: "Uber Rides Receipt",
+    imageUrl:
+      "https://raw.githubusercontent.com/kunalagra/uber-rides-receipt/main/public/screenshot.png",
+    description:
+      "A fast web app for viewing and exporting Uber ride data. Features interactive filtering, custom date selection, bulk PDF receipt generation, and direct Uber API integration using secure session-based authentication.",
+    githubLink: "https://github.com/kunalagra/uber-rides-receipt",
+    deployLink: "https://uber-rides-receipt.vercel.app/",
+    tags: ["TanStack Start"],
+    date: "2024-03-20",
+    type: ["Web"],
+  },
+  {
     title: "TradeView - Quick Market View",
     imageUrl:
       "https://github.com/kunalagra/tradeview-fe/raw/main/screenshot.png",

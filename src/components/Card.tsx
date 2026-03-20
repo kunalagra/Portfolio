@@ -140,6 +140,9 @@ export function Cards({
       case "Chakra UI":
         values = ["teal", SiChakraui];
         break;
+      case "TanStack Start":
+        values = ["blue", FaReact];
+        break;
       default:
         if (["Linear Regression", "OpenCV", "LSTM"].includes(tag)) {
           values = ["blue", GiArtificialIntelligence];

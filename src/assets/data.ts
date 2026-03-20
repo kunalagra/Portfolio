@@ -58,7 +58,7 @@ export const milestones: Milestone[] = [
   {
     date: "Jun 2025 - Current",
     title: "Prodigal - Solution Engineer",
-    description: "404 - Not Found",
+    description: "Fine-tuned custom LLMs and standardized the end-to-end deployment pipeline for a real-time call notes service handling 170K+ daily calls. Built custom event detection tailored to specific client needs.\nOptimized infrastructure by implementing multi-threading, reducing publishing latency by 30–40%, and halved CI build times by migrating to UV with optimized Docker images.\nAdditionally, developed Databricks pipelines for automated reporting and shipped two internal Next.js apps that enable CSM and Support teams to self-serve.",
     url: "https://www.prodigaltech.com/",
   },
   {

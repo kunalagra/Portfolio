@@ -178,8 +178,8 @@ export const projects: Project[] = [
       "A fast web app for viewing and exporting Uber ride data. Features interactive filtering, custom date selection, bulk PDF receipt generation, and direct Uber API integration using secure session-based authentication.",
     githubLink: "https://github.com/kunalagra/uber-rides-receipt",
     deployLink: "https://uber-rides-receipt.vercel.app/",
-    tags: ["TanStack Start"],
-    date: "2024-03-20",
+    tags: ["TypeScript", "TanStack Start"],
+    date: "2025-11-27",
     type: ["Web"],
   },
   {

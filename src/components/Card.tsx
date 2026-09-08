@@ -13,6 +13,7 @@ import {
 import type React from "react";
 import {
   FaArrowUpRightFromSquare,
+  FaBluetoothB,
   FaBootstrap,
   FaChartLine,
   FaCode,
@@ -23,6 +24,7 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
+  FaUsb,
 } from "react-icons/fa6";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import {
@@ -44,6 +46,7 @@ import {
   SiProducthunt,
   SiSqlite,
   SiTensorflow,
+  SiTypescript,
 } from "react-icons/si";
 import { AiOutlineOpenAI } from "react-icons/ai";
 import type { CardProps } from "@/types";
@@ -142,6 +145,15 @@ export function Cards({
         break;
       case "TanStack Start":
         values = ["blue", FaReact];
+        break;
+      case "TypeScript":
+        values = ["blue", SiTypescript];
+        break;
+      case "Web Bluetooth":
+        values = ["teal", FaBluetoothB];
+        break;
+      case "Web Serial":
+        values = ["gray", FaUsb];
         break;
       default:
         if (["Linear Regression", "OpenCV", "LSTM"].includes(tag)) {

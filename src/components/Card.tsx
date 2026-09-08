@@ -40,12 +40,12 @@ import {
   SiMarkdown,
   SiMongodb,
   SiNextdotjs,
-  SiOpenai,
   SiPlotly,
   SiProducthunt,
   SiSqlite,
   SiTensorflow,
 } from "react-icons/si";
+import { AiOutlineOpenAI } from "react-icons/ai";
 import type { CardProps } from "@/types";
 
 export function Cards({
@@ -78,7 +78,7 @@ export function Cards({
         values = ["teal", SiGooglesheets];
         break;
       case "OpenAI":
-        values = ["blue", SiOpenai];
+        values = ["blue", AiOutlineOpenAI];
         break;
       case "MongoDB":
         values = ["green", SiMongodb];

@@ -161,7 +161,7 @@ export const projects: Project[] = [
   {
     title: "OtoControl - Browser-Native Headphone Control",
     imageUrl:
-      "https://raw.githubusercontent.com/kunalagra/OtoControl/main/public/M4-preview.png",
+      "https://raw.githubusercontent.com/kunalagra/OtoControl/main/public/screenshot.png",
     description:
       "Control your wireless headphones straight from the browser, with no app and no account. Speaks each vendor's own BLE GATT and Web Serial protocol across Sennheiser, Sony, Nothing/CMF, Soundcore and OPPO, and builds its UI live from whatever the connected device actually reports.",
     githubLink: "https://github.com/kunalagra/OtoControl",
